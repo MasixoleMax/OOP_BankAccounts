@@ -1,24 +1,22 @@
 class BankAccount {
-    constructor (amount, monthlyFee, interestRate){
-        this.balance = amount;
+    constructor (balance, monthlyFee, interestRate){
+        this.balance = balance;
         this.monthlyFee = monthlyFee;
         this.interestRate = interestRate;
        
-    };
-}
- class Bank extends BankAccount {
-    constructor(bankAccountNumber, balance, monthlyFee, interestRate){
-        this.bankAccountNumber = bankAccountNumber;
-        super(balance, monthlyFee, interestRate)
     }
+};
 
-    withdraw(bankAccountNumber, amount){
-     let bankAccountNumber = this.bankAccountNumber;
-     console.log(super.withdrawal())
-
+class Bank extends BankAccount {
+    constructor (balance, monthlyFee, interestRate, BankAccount ){
+        this.BankAccount = new BankAccount(balance, monthlyFee, interestRate);
+        this.BankAccount = AccNum;
     };
+
+    withdraw(AccNum, amount){
+        AccNum.this.BankAccount.withdraw(amount);
+    }
 }
 
-let finalBalance1 = new Bank(1000, 50, 12);
-finalBalance1.withdraw();
-
+let y = new Bank();
+console.log(y.withdraw(123456788, 100));
