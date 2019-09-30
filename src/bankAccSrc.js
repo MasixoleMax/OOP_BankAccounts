@@ -1,6 +1,6 @@
 class BankAccount {
-    constructor (amount, monthlyFee, interestRate){
-        this.balance = amount;
+    constructor (balance, monthlyFee, interestRate){
+        this.balance = balance;
         this.monthlyFee = monthlyFee;
         this.interestRate = interestRate;
        
