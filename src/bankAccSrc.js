@@ -27,7 +27,7 @@ class BankAccount {
 
 // module.exports = BankAccount;
 
-let finalBalance = new BankAccount (1000, 50, 12);
+let finalBalance = new BankAccount (2000, 50, 12);
 
 //Perform finishMonth()
 console.log('The final balance of the account after one month is:')
