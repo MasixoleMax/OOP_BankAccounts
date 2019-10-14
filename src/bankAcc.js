@@ -31,7 +31,7 @@ let finalBalance = new BankAccount (1000, 50, 12);
 
 // Perform finishMonth() 
 console.log("");
-console.log("--------------------BANK ACCOUNTS PART 1-----------------------------------");
+console.log("------------------------BANK ACCOUNTS PART 1-----------------------------------");
 console.log("");
 console.log('The final balance of the account after one month is:')
 console.log("");

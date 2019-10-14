@@ -30,17 +30,18 @@
 
     withdraw(bankAccountNumber, amount) {                                            
       for (let i = 0; i < accounts.length; i++) {
-        if (accounts[i].accountNumber == bankAccountNumber) {
-          accounts[i].bankAccount.withdrawal(amount);
+        if (accounts[i].accountNumber === bankAccountNumber) {
+          accounts[i].bankAccount.withdrawal(amount)
            return;                                                                     
-      } 
+          } 
+        }
+          throw new Error("Withdraw unsuccessful. Bank account number is not found!");   
     }
-         throw new Error("Withdraw unsuccessful. Bank account number is not found!");   
-}
-  
+
+
     deposit(bankAccountNumber, amount) {                                              
       for (let i = 0; i < accounts.length; i++) {
-        if (accounts[i].accountNumber == bankAccountNumber) {
+        if (accounts[i].accountNumber === bankAccountNumber) {
           accounts[i].bankAccount.deposit(amount);
            return;                                                                         
       } 
@@ -63,10 +64,14 @@
   let x = new Bank (1000, 12, 50, 1234567899);
   let y = new Bank (2000, 12, 50, 1234567898);
   let z = new Bank (1000, 12, 50, 1234567888);
+
+
+
+
   
 /***************************************************************************************
                       Lets test the methods and print to the console
-****************************************************************************************/
+****************************************************************************************/             
   console.log("----------------------------BANK ACCOUNTS PART 2--------------------------------");
   console.log("");                                   
   console.log("****** Before any transactions the account balances are: ******");   
@@ -87,8 +92,10 @@
   console.log("****** After all transactions, the updated account balances are: ******");
   console.log("");
 
-  console.log(accounts);                                   
-  console.log("");
+  console.log(accounts);                                  
+  console.log(""); 
+  
+
 
   
   
