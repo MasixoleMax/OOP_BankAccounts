@@ -2,7 +2,7 @@
                    Creating a Bank Blueprint
 *******************************************************************/
 
-  let BankAcc = require("./bankAcc");                                 // Importing class from bankAcc.js 
+  // let BankAcc = require("./bankAcc");                                 // Importing class from bankAcc.js 
   let accounts = [];                                                  // Stores all the created accounts
 
 /*******************************************************************
@@ -55,7 +55,7 @@
     }
   }
 
-  module.exports = Bank;
+  // module.exports = Bank;
   
 /**************************************************************************************
                               Lets instantiate the new Banks

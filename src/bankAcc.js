@@ -1,9 +1,10 @@
+
 class BankAccount {
     constructor (balance, monthlyFee, interestRate){
         this.balance = balance;
         this.monthlyFee = monthlyFee;
         this.interestRate = interestRate;
-     
+
     }
 
      finishMonth(){
@@ -25,9 +26,8 @@ class BankAccount {
     }
 }
 
-module.exports = BankAccount;
 
-let finalBalance = new BankAccount (1000, 50, 12);
+let finalBalance = new BankAccount(1000, 50, 12);
 
 // Perform finishMonth() 
 console.log("");
@@ -50,3 +50,4 @@ console.log("");
 finalBalance.deposit(200);
 console.log("");
 
+//module.exports = BankAccount;

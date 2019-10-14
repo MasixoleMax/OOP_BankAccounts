@@ -1,5 +1,5 @@
 
-let MyBank = require("./bank");
+ // let MyBank = require("./bank");
 
 class Customer {
   constructor(balance, interest, monthlyFee, accountNum, customerPassword) {
@@ -45,9 +45,9 @@ z.setPassword("1234");
 console.log("----------------------------BANK ACCOUNTS PART 3-----------------------------------");
 
 console.log("");
-console.log("Password of x is :  " + x.customerPassword);               // Prints the password "gggh" 
-console.log("Password of y is :  " + y.customerPassword);               // Prints the password "ppp8" 
-console.log("Password of z is :  " + z.customerPassword);               // Prints the password "1234" 
+console.log("Password of x is :  " + x.customerPassword);               // Prints the password of x : "gggh" 
+console.log("Password of y is :  " + y.customerPassword);               // Prints the password of y : "ppp8" 
+console.log("Password of z is :  " + z.customerPassword);               // Prints the password of z : "1234" 
 console.log("");
 console.log("****** updated balance of y after withdraw and x after deposit respectively : ******");
 y.withdraw(y.accountNumber, 500, y.customerPassword);                   // Prints the updated balance of y after withdraw 
