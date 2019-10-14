@@ -2,12 +2,12 @@
                    Creating a Bank Blueprint
 *******************************************************************/
 
-  // let BankAcc = require("./bankAcc");                                 // Importing class from bankAcc.js 
+  let BankAcc = require("./bankAcc");                                 // Importing class from bankAcc.js 
   let accounts = [];                                                  // Stores all the created accounts
 
-/*******************************************************************
+/******************************************************************
                  This is where my class begins
-********************************************************************/
+*******************************************************************/
   
   class Bank {
     constructor(balance, interestRate, monthlyFee, accountNum){
@@ -59,19 +59,15 @@
   
 /**************************************************************************************
                               Lets instantiate the new Banks
-****************************************************************************************/
+***************************************************************************************/
     
   let x = new Bank (1000, 12, 50, 1234567899);
   let y = new Bank (2000, 12, 50, 1234567898);
   let z = new Bank (1000, 12, 50, 1234567888);
 
-
-
-
-  
 /***************************************************************************************
                       Lets test the methods and print to the console
-****************************************************************************************/             
+****************************************************************************************/
   console.log("----------------------------BANK ACCOUNTS PART 2--------------------------------");
   console.log("");                                   
   console.log("****** Before any transactions the account balances are: ******");   
@@ -81,19 +77,19 @@
   console.log("");
   console.log("****** updated balance after deposit, withdraw and transfer respectively : ******");   
 
-  y.deposit(y.accountNumber, 2000);                        // Prints the balance of y after deposit.
-  x.withdraw(x.accountNumber, 500);                        // Prints the balance of x after withdraw. 
-  console.log("");                                   
+  // y.deposit(y.accountNumber, 2000);                        // Prints the balance of y after deposit.
+  // x.withdraw(x.accountNumber, 500);                        // Prints the balance of x after withdraw. 
+  // console.log("");                                   
 
-  console.log("****** updated balance of y & z respectively after transfer : **********");   
-  y.transfer(y.accountNumber, z.accountNumber, 1000);      // Prints the balance of y & z after transfer. 
-  console.log("");   
+  // console.log("****** updated balance of y & z respectively after transfer : **********");   
+  // y.transfer(y.accountNumber, z.accountNumber, 1000);      // Prints the balance of y & z after transfer. 
+  // console.log("");   
 
-  console.log("****** After all transactions, the updated account balances are: ******");
-  console.log("");
+  // console.log("****** After all transactions, the updated account balances are: ******");
+  // console.log("");
 
-  console.log(accounts);                                  
-  console.log(""); 
+  // console.log(accounts);
+  // console.log(""); 
   
 
 
