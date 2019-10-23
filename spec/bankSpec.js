@@ -1,6 +1,5 @@
-describe("The BankAccount class", function() {
 
-     let finalBalance = new BankAccount(1000, 50, 12);
+describe("The BankAccount class", function() {
 
     it ("should be able to perform finishmonth and update the balance", function() {
   
@@ -12,18 +11,13 @@ describe("The BankAccount class", function() {
         expect(finalBalance.withdrawal(100)).toBe(860);
     });
 
-   it ("should be able to deposit an amount from the updated balance and return the correct balance", function() {
+    it ("should be able to deposit an amount from the updated balance and return the correct balance", function() {
   
-        expect(finalBalance.deposit(100)).toBe(960);
-    });
+         expect(finalBalance.deposit(100)).toBe(960);
+   });
 });
 
 describe("The Bank class", function(){
-
-     let k = new Bank(1000, 12, 50, 1234567899);
-     let l = new Bank(2000, 12, 50, 1234567898);
-     let m = new Bank(1000, 12, 50, 1234567888);
-
 
     it ("should be able to create accounts with account numbers and use the account numbers to withdraw, deposit and transfer between them", function() {
  
@@ -43,15 +37,9 @@ describe("The Bank class", function(){
 
 describe("The Customer class", function() {
 
-     let a = new Customer (1000, 12, 50, 1234567899);
-     let b = new Customer (2000, 12, 50, 1234567898);
-     let c = new Customer (1000, 12, 50, 1234567888);
-
-     c.setPassword(1234);                            // set the password
-
-it ("should be able to set passwords and use them to perform the necessary transactions", function() {
+    it ("should be able to set passwords and use them to perform the necessary transactions", function() {
  
-        expect(c.customerPassword).toBe(1234);
+        expect(c.customerPassword).toBe('1234');
     });
 
     it ("should be able to set passwords and use them to perform the necessary transactions", function() {
@@ -69,3 +57,7 @@ it ("should be able to set passwords and use them to perform the necessary trans
         expect(a.transfer(a.accountNumber, c.accountNumber, 1000, a.customerPassword)).toBe(500, 500);
     });
 });
+
+
+  /*****************************************[END]*********************************************/
+

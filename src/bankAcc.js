@@ -28,25 +28,27 @@ class BankAccount {
 
  let finalBalance = new BankAccount(1000, 50, 12);
 
-// // Perform finishMonth() 
-// console.log("");
-// console.log("------------------------BANK ACCOUNTS PART 1-----------------------------------");
-// console.log("");
-// console.log('The final balance of the account after one month is:')
-// console.log("");
- console.log(finalBalance.finishMonth());
-// console.log("");
+// // // Perform finishMonth() 
+//  console.log("");
+//  console.log("------------------------BANK ACCOUNTS PART 1-----------------------------------");
+//  console.log("");
+//  console.log('The final balance of the account after one month is:')
+//  console.log("");
+//  console.log(finalBalance.finishMonth());
+//  console.log("");
 
-// // Perform withdral()
+// // // Perform withdral()
 // console.log('The final balance of the account after withdrawing the amount is:')
 // console.log("");
-console.log(finalBalance.withdrawal(100));
+// console.log(finalBalance.withdrawal(100));
 // console.log("");
 
-// // Perform deposit()
+// // // Perform deposit()
 // console.log('The final balance of the account after depositing the amount is:')
 // console.log("");
- console.log(finalBalance.deposit(200));
+// console.log(finalBalance.deposit(200));
 // console.log("");
 
-module.exports = BankAccount;
+//module.exports = BankAccount;
+
+  /*****************************************[END]*********************************************/
